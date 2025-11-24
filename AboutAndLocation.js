@@ -1,4 +1,3 @@
-// AboutAndLocation.js
 import { BUSINESS_INFO } from './constants.js';
 
 export const renderAboutAndLocation = () => {
@@ -7,7 +6,7 @@ export const renderAboutAndLocation = () => {
       <div class="bg-white py-20">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row gap-12 items-start mb-16">
-                <div class="md:w-1/2 sticky top-24">
+                <div class="md:w-1/2 sticky md:top-24">
                     <div class="relative group">
                         <img 
                             src="https://picsum.photos/id/111/800/600" 
@@ -46,17 +45,20 @@ export const renderAboutAndLocation = () => {
       <div id="ubicacion" class="bg-gray-900 py-20 scroll-mt-24">
         <div class="container mx-auto px-4">
             <div class="flex flex-col-reverse lg:flex-row gap-10 items-stretch">
-                <div class="lg:w-2/3 h-80 lg:h-auto min-h-[300px] bg-gray-800 rounded-xl overflow-hidden shadow-2xl border border-gray-700 relative group">
-                    <img 
-                        src="https://picsum.photos/id/1031/1200/600" 
-                        alt="Mapa de ubicación"
-                        class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity" 
-                    />
-                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-                        <div class="bg-brazil-green/90 p-4 rounded-xl backdrop-blur shadow-xl text-center">
-                            <p class="font-bold text-white text-lg">Zona Cotahuma</p>
-                            <p class="text-white/80 text-sm">La Paz, Bolivia</p>
-                        </div>
+                <div class="lg:w-2/3 h-96 lg:h-auto min-h-[350px] bg-gray-800 rounded-xl overflow-hidden shadow-2xl border border-gray-700 relative">
+                    <iframe
+                        src="${BUSINESS_INFO.googleMapsEmbed}" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="w-full h-full"
+                    ></iframe>
+                    <div class="absolute bottom-4 left-4 bg-brazil-green/90 p-3 rounded-lg backdrop-blur shadow-xl text-center">
+                        <p class="font-bold text-white text-md">Zona Cotahuma</p>
+                        <p class="text-white/80 text-xs">La Paz, Bolivia</p>
                     </div>
                 </div>
                 
@@ -73,9 +75,9 @@ export const renderAboutAndLocation = () => {
                     
                     <div class="mb-8">
                         <p class="font-bold text-slate-800 flex items-center gap-3 mb-2">
-                            <span>Ubicación:</span>
+                            <span>Dirección Principal:</span>
                         </p>
-                        <p class="text-slate-600 ml-6">${BUSINESS_INFO.location}</p>
+                        <p class="text-slate-600 ml-0">${BUSINESS_INFO.location}</p>
                     </div>
 
                     <div class="flex flex-col gap-3">
