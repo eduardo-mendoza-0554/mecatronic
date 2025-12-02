@@ -47,7 +47,7 @@ export const renderBookingForm = () => {
                       type="text" 
                       name="name"
                       placeholder="Tu Nombre"
-                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none"
+                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none **text-gray-900**"
                     />
                   </div>
                 </div>
@@ -60,7 +60,7 @@ export const renderBookingForm = () => {
                       type="tel" 
                       name="contact"
                       placeholder="7XXXXXXX"
-                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none"
+                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none **text-gray-900**"
                     />
                   </div>
                 </div>
@@ -76,7 +76,7 @@ export const renderBookingForm = () => {
                       type="text" 
                       name="carModel"
                       placeholder="Ej. Gol, Tiguan"
-                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none"
+                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none **text-gray-900**"
                     />
                   </div>
                 </div>
@@ -89,7 +89,7 @@ export const renderBookingForm = () => {
                       placeholder="Ej. 2018"
                       min="1990"
                       max="${new Date().getFullYear() + 1}"
-                      class="w-full pl-4 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none"
+                      class="w-full pl-4 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none **text-gray-900**"
                     />
                   </div>
                 </div>
@@ -100,7 +100,7 @@ export const renderBookingForm = () => {
                 <select 
                   required
                   name="serviceType"
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none bg-white"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none bg-white **text-gray-900**"
                 >
                   <option value="">Selecciona un Servicio</option>
                   ${serviceOptionsHTML}
@@ -117,7 +117,7 @@ export const renderBookingForm = () => {
                       type="date" 
                       name="date"
                       min="${new Date().toISOString().split('T')[0]}"
-                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none"
+                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none **text-gray-900**"
                     />
                   </div>
                 </div>
@@ -129,7 +129,7 @@ export const renderBookingForm = () => {
                       required
                       type="time" 
                       name="time"
-                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none"
+                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none **text-gray-900**"
                     />
                   </div>
                 </div>
