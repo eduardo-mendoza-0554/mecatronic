@@ -50,7 +50,7 @@ export const renderBookingForm = () => {
                       type="text" 
                       name="name"
                       placeholder="Tu Nombre"
-                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none text-gray-900"
+                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none text-gray-900 placeholder-gray-500"
                     />
                   </div>
                 </div>
@@ -63,7 +63,7 @@ export const renderBookingForm = () => {
                       type="tel" 
                       name="contact"
                       placeholder="7XXXXXXX"
-                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none text-gray-900"
+                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none text-gray-900 placeholder-gray-500"
                     />
                   </div>
                 </div>
@@ -79,7 +79,7 @@ export const renderBookingForm = () => {
                       type="text" 
                       name="carModel"
                       placeholder="Ej. Gol, Tiguan"
-                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none text-gray-900"
+                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none text-gray-900 placeholder-gray-500"
                     />
                   </div>
                 </div>
@@ -92,7 +92,7 @@ export const renderBookingForm = () => {
                       placeholder="Ej. 2018"
                       min="1990"
                       max="${maxYear}"
-                      class="w-full pl-4 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none text-gray-900"
+                      class="w-full pl-4 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none text-gray-900 placeholder-gray-500"
                     />
                   </div>
                 </div>
@@ -151,4 +151,3 @@ export const renderBookingForm = () => {
     </section>
     `;
 };
-
