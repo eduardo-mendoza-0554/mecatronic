@@ -8,6 +8,9 @@ export const renderBookingForm = () => {
     
     // NOTA: La lógica de JS para enviar el formulario a WhatsApp está en main.js
     
+    // Obtenemos el año actual para establecer el máximo en el input de año
+    const maxYear = new Date().getFullYear() + 1;
+
     return `
     <section id="reserva" class="py-20 bg-brazil-green text-white scroll-mt-24">
       <div class="container mx-auto px-4">
@@ -47,7 +50,7 @@ export const renderBookingForm = () => {
                       type="text" 
                       name="name"
                       placeholder="Tu Nombre"
-                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none **text-gray-900**"
+                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none text-gray-900"
                     />
                   </div>
                 </div>
@@ -60,7 +63,7 @@ export const renderBookingForm = () => {
                       type="tel" 
                       name="contact"
                       placeholder="7XXXXXXX"
-                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none **text-gray-900**"
+                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none text-gray-900"
                     />
                   </div>
                 </div>
@@ -76,7 +79,7 @@ export const renderBookingForm = () => {
                       type="text" 
                       name="carModel"
                       placeholder="Ej. Gol, Tiguan"
-                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none **text-gray-900**"
+                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none text-gray-900"
                     />
                   </div>
                 </div>
@@ -88,8 +91,8 @@ export const renderBookingForm = () => {
                       name="carYear"
                       placeholder="Ej. 2018"
                       min="1990"
-                      max="${new Date().getFullYear() + 1}"
-                      class="w-full pl-4 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none **text-gray-900**"
+                      max="${maxYear}"
+                      class="w-full pl-4 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none text-gray-900"
                     />
                   </div>
                 </div>
@@ -100,7 +103,7 @@ export const renderBookingForm = () => {
                 <select 
                   required
                   name="serviceType"
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none bg-white **text-gray-900**"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none bg-white text-gray-900"
                 >
                   <option value="">Selecciona un Servicio</option>
                   ${serviceOptionsHTML}
@@ -117,7 +120,7 @@ export const renderBookingForm = () => {
                       type="date" 
                       name="date"
                       min="${new Date().toISOString().split('T')[0]}"
-                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none **text-gray-900**"
+                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none text-gray-900"
                     />
                   </div>
                 </div>
@@ -129,7 +132,7 @@ export const renderBookingForm = () => {
                       required
                       type="time" 
                       name="time"
-                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none **text-gray-900**"
+                      class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brazil-green focus:border-transparent outline-none text-gray-900"
                     />
                   </div>
                 </div>
@@ -148,3 +151,4 @@ export const renderBookingForm = () => {
     </section>
     `;
 };
+
